@@ -199,7 +199,7 @@ h3, h4, h5, p {
         font-size: 1.2em;
     }
 
-   
+
 }
 
 .links a {
@@ -209,7 +209,7 @@ h3, h4, h5, p {
     font-size: 1.2em;
     border: 2px solid black;
     text-transform: uppercase;
-    font-family: "Space Mono"; 
+    font-family: "Space Mono";
 }
 
 /* spacing */
@@ -413,4 +413,19 @@ footer a {
 }
 .sponsor-link {
     text-align: right;
+}
+.links button {
+    border: 2px solid black;
+    text-transform: uppercase;
+    font-family: "Space Mono";
+}
+
+.sponsor {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.sponsor-extra {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
