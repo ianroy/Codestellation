@@ -1,16 +1,16 @@
 body {
     overflow-x: hidden;
-    background: white;
+    background: black;
+    /*background-image: url(../images/stars.png);*/
 }
 
 
 /* typography */
 h1, h2 {
-    font-family: 'Rubik', serif;
+    font-family: 'Orbitron', sans-serif;
     letter-spacing: normal;
 }
 h1 {
-    color: #19E0A2;
     font-size: 5em;
     font-weight: bold;
     margin: 10px;
@@ -20,7 +20,6 @@ h1 {
     padding-bottom: 42px;
 }
 h2 {
-    color: black;
     font-size: 2em;
     font-weight: bold;
     margin: 10px;
@@ -39,12 +38,40 @@ p {
     line-height: 1.8;
     font-size: 1.2em;
     letter-spacing: normal;
+    color: white;
 }
-h3, h4, h5, p {
-    font-family: "Space Mono", serif;
+h3, h4, h5 {
+    font-family: 'Orbitron', sans-serif;
     letter-spacing: normal;
 }
+h1, h2 {
+  background: -webkit-linear-gradient(left, rgba(244,50,215,1), rgba(105,193,209,1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h3, h4, h5 {
+  background: -webkit-linear-gradient(left, rgba(105,193,209,1), rgba(244,50,215,1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
+p {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: normal;
+}
+
+.centered {
+  width: 33%;
+
+}
+
+.question-container {
+  background-color: black;
+}
+
+.question-container a {
+  color: rgba(244,50,215,1);
+}
 
 /* responsive */
 @media screen and (max-width: 35.5em) {
@@ -73,9 +100,6 @@ h3, h4, h5, p {
     }
     #quick-facts h3 {
         letter-spacing: .2em;
-    }
-    #header-sub {
-        min-height: 300px;
     }
     .panel {
         padding: 0 1em 0 1em;
@@ -129,9 +153,6 @@ h3, h4, h5, p {
     #quick-facts h3 {
         letter-spacing: .25em;
     }
-    #header-sub {
-        min-height: 400px;
-    }
     .panel {
         padding: 0 1em 0 1em;
     }
@@ -154,6 +175,7 @@ h3, h4, h5, p {
         margin: 2em 1em 0 0;
         font-size: 1.2em;
     }
+
 }
 @media screen and (min-width:48em) and (max-width: 80em)	{
     h1 {
@@ -163,9 +185,6 @@ h3, h4, h5, p {
         letter-spacing: normal;
         font-size: 1.1em;
         padding: .2em .8em;
-    }
-    #header-sub {
-        min-height: 400px;
     }
     #header-sub h2 {
         font-size: 1.5em;
@@ -190,9 +209,6 @@ h3, h4, h5, p {
 @media screen and (min-width: 80em)	 {
     #quick-facts h3 {
         letter-spacing: .25em;
-    }
-    #header-sub {
-        min-height: 600px;
     }
     .panel {
         padding: 0 4em 0 4em;
@@ -246,7 +262,7 @@ section {
     display: block;
 }
 #panel-controls .current h2{
-    color: #19E0A2;
+    color: rgba(105,193,209);
 }
 #panel-controls .current .icon {
     display: inline-block;
@@ -261,11 +277,30 @@ section {
 
 /* header */
 header {
-    background: white;
-    /*background: -webkit-linear-gradient(white, #EDFBF5);
-    background: -o-linear-gradient(white, #EDFBF5);
-    background: -moz-linear-gradient(white, #EDFBF5);
-    background: linear-gradient(white, #EDFBF5);*/
+    background: -webkit-linear-gradient(
+                  rgba(105,193,209,0.5),
+                  rgba(244,50,215,0.5),
+                  black,
+                  black),
+                  url(../images/stars.png);
+    background: -o-linear-gradient(
+                  rgba(105,193,209,0.5),
+                  rgba(244,50,215,0.5),
+                  black,
+                  black),
+                  url(../images/stars.png);
+    background: -moz-linear-gradient(
+                  rgba(105,193,209,0.5),
+                  rgba(244,50,215,0.5),
+                  black,
+                  black),
+                  url(../images/stars.png);
+    background: linear-gradient(
+                  rgba(105,193,209,0.5),
+                  rgba(244,50,215,0.5),
+                  black,
+                  black),
+                  url(../images/stars.png);
     top: 0;
 }
 #header-sub {
@@ -274,6 +309,9 @@ header {
     text-align: center;
     margin-top: 7em;
     position: relative;
+    background-image: url(../images/mountains.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .logo {
     display: block;
@@ -296,48 +334,26 @@ header {
 #quick-facts h2 {
     text-align: left;
     margin-left: 0;
-    color: #19E0A2;
 }
 #quick-facts h3 {
     padding: .9em 0 .3em 0;
     margin: 0;
     font-size: 1.3em;
-    font-family: "Rubik", serif;
+    font-family: 'Orbitron', sans-serif;
     text-transform: uppercase;
 }
 #quick-facts p {
     padding: 0;
     margin: 0;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
 }
 
-
-/* prompt */
-.prompt {
-    color: #19E0A2;
+/* gradient for rest */
+.content {
+  background-color: black;
+  background-image: url(../images/stars.png);
 }
-.typed-cursor {
-    opacity: 1;
-    color: #19E0A2;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-}
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-
 
 /* about */
 #about {
@@ -345,7 +361,7 @@ header {
     top: 100%;
 }
 #about h2 {
-    color: black;
+    color: #F432D7;
 }
 
 
@@ -361,7 +377,8 @@ header {
     text-align: center;
 }
 .schedule-table {
-    font-family: "Space Mono", serif;
+    font-family: 'Orbitron', sans-serif;
+    color:white;
 }
 .schedule-table td {
     letter-spacing: normal;
@@ -390,6 +407,7 @@ button {
 footer {
     padding: 2em;
     background-color: black;
+    background-image: url(../images/stars.png);
 }
 footer h3 {
     color: white;
@@ -399,7 +417,7 @@ footer h4 {
     text-transform: uppercase;
     color: white;
     text-align: center;
-    font-family: "Rubik";
+    font-family: 'Orbitron', sans-serif;
     font-weight: normal;
     margin-bottom: 0;
 }
@@ -407,9 +425,10 @@ footer p {
     color: white;
     text-align: center;
     margin-top: 0;
+    font-family: 'Orbitron', sans-serif;
 }
 footer a {
-    color: #19E0A2;
+    color: rgba(105,193,209,1);
 }
 
 
@@ -423,7 +442,25 @@ footer a {
     text-align: right;
 }
 .links button {
-    border: 2px solid black;
+    border: 2px solid white;
     text-transform: uppercase;
-    font-family: "Space Mono";
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* marquee */
+.digit {
+  float: left;
+  width: 14px;
+  height: 26px;
+  margin-right: 2px;
+  background: #000 url(../images/ledmarquee.gif) 0px 0px;
+}
+
+#ledmarquee {
+  height: 26px;
+  visibility: hidden;
+  background-color: #000;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
