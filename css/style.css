@@ -1,7 +1,6 @@
 body {
     overflow-x: hidden;
     background: black;
-    /*background-image: url(../images/stars.png);*/
 }
 
 
@@ -347,6 +346,14 @@ header {
     margin: 0;
     color: white;
     font-family: 'Orbitron', sans-serif;
+}
+
+#quick-facts a {
+  color: #69c1d1;
+}
+
+#quick-facts a:visited {
+  color: #f432d7;
 }
 
 /* gradient for rest */
