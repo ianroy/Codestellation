@@ -97,6 +97,9 @@ p {
     #header-sub h2 {
         font-size: 1.2em;
     }
+    #header-sub {
+      background-position: 0.25em !important;
+    }
     #quick-facts h3 {
         letter-spacing: .2em;
     }
@@ -149,6 +152,9 @@ p {
     #header-sub h2 {
         font-size: 1.5em;
     }
+    #header-sub {
+      background-position: 0.5em !important;
+    }
     #quick-facts h3 {
         letter-spacing: .25em;
     }
@@ -176,6 +182,13 @@ p {
     }
 
 }
+
+@media screen and (min-width:48em) and (max-width: 60em) {
+  #header-sub {
+    background-position: 0.5em !important;
+  }
+}
+
 @media screen and (min-width:48em) and (max-width: 80em)	{
     h1 {
         padding: .2em;
@@ -310,7 +323,8 @@ header {
     position: relative;
     background-image: url(../images/mountains.png);
     background-size: contain;
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+    background-position: 4em;
 }
 .logo {
     display: block;
