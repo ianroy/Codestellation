@@ -234,12 +234,16 @@ and (orientation:portrait)
 }
 
 /*For Desktops*/
-@media (min-width: 1281px) {
+@media (min-width: 1224px) {
     .logoForeground {
-        height: 90vh;
+        height: 70vh;
+        position:absolute;
+        top:0;
+        bottom:0;
+        margin:auto;
     }
     .logoBackground {
-        height: 100vh;
+        height: 95vh;
     }
 }
 
