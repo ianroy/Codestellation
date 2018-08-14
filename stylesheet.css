@@ -1,0 +1,259 @@
+/*@font-face {*/
+    /*font-family: "Calling Code";*/
+    /*src: url(./fonts/callingcode.woff);*/
+/*}*/
+
+html {
+  overflow-x: hidden;
+}
+
+.circleInfo {
+    border: 3px solid #3A318C;
+    margin: 0 auto;
+    border-radius: 100%;
+    height: 140px;
+    padding-top: 21px;
+    width: 140px;
+}
+
+.logoForeground {
+    z-index: 1;
+    position: absolute;
+    opacity: 1;
+}
+.logoBackground {
+    z-index: 0;
+    opacity: 1;
+}
+
+.background {
+    background: linear-gradient(rgba(255,255,255,1), rgba(231,231,237, 1), rgba(83, 79, 128, 1) );
+}
+
+.row.justify-content-center.circlesRow{
+    padding: 0 100px;
+}
+
+.col-xs-12.countDown{
+    padding-bottom: 20px;
+}
+
+.col-sm-6.countDown{
+    padding-bottom: 20px;
+}
+
+.col-md-2.countDown{
+    padding-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.mt-5.sectionHeaders {
+    text-align: center;
+    color: #3A318C;
+    font-weight: bolder;
+    font-family: 'Mina', 'Montserrat', monospace;
+    margin-top: 0px;
+    padding-bottom: 10px;
+}
+
+.navbar.navbar-expand-md.navbar-dark{
+   z-index: 2;
+}
+
+.col-sm-3 > div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.about-us-content-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 0 !important;
+    padding: 15px 0px;
+}
+
+.about-us-content-text {
+    flex-grow: 1;
+}
+
+
+.circleAboutUs {
+    border: 3px solid #FAA880;
+    margin: 0 auto;
+    border-radius: 100%;
+    height: 140px;
+    width: 140px;
+    background-color: #FAA880;
+    margin-top: 15px;
+}
+
+.about-us-content-container {
+    margin: auto;
+    border-radius: 10%;
+    background-color: #FAA880;
+    text-align: center;
+}
+
+.about-us-content-text {
+    font-family: 'Mina', 'Montserrat', monospace;
+    padding: 25px 25px;
+}
+
+.about-us-text {
+    text-align: center;
+    color: #3A318C;
+    font-family: 'Mina', 'Montserrat', monospace;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.about-us-button {
+    border-radius: 20%/50%;
+    border: 1px solid black;
+    text-align: center;
+    font-family: 'Mina', 'Montserrat', monospace;
+    color: #3A318C;
+    margin-bottom: 10px;
+    padding-top:10px;
+    font-weight: bolder;
+    background-color: white;
+}
+
+.about-us-button:hover {
+    cursor: pointer;
+    box-shadow: 3px 3px 5px #888888;
+}
+
+.col-sm-3 > .about-us-content-container {
+    height: 55px;
+}
+
+.registrationImages {
+    margin-top: 10px;
+    margin-left: 25px;
+    width: 84px;
+    height: 98px;
+}
+
+.footer {
+    height:100%;
+}
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 2px solid rgba(0, 0, 0, .1);
+}
+
+h4 {
+  font-family: 'Montserrat', monospace;
+}
+
+h5 {
+  font-family: 'Montserrat', monospace;
+}
+
+p {
+  font-family: 'Montserrat', monospace;
+}
+
+a {
+  font-family: 'Montserrat', monospace;
+}
+
+.fas.fa-chevron-circle-right.faqArrows {
+    padding-right: 15px;
+    color: #3A318C
+}
+
+.testimonial-images{
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+    box-shadow: 5px 5px 2.5px grey;
+}
+
+.testimonial-name {
+    padding-top: 10px;
+    clear: both;
+    float: right;
+    display: block;
+    font-weight: bolder;
+    color: #3A318C;
+    font-family: 'Mina', 'Montserrat', monospace;
+}
+
+.row.testimonial-container {
+    padding-bottom: 30px;
+}
+
+.col-lg-6.testimonial-text {
+    padding-bottom: 20px;
+    text-align: right;
+    padding-left: 30px;
+    margin-left: 1%;
+}
+
+@media only screen and (min-width : 1025px) {
+    .col-md-12.testimonial-text {
+        padding-bottom: 20px;
+        text-align: left;
+        padding-left: 25px;
+    }
+}
+
+/*iPad Pro query for weird format*/
+@media only screen
+and (min-device-width: 1024px)
+and (max-device-width: 1366px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .row.testimonial-container {
+        padding-left: 15%;
+    }
+
+    .container-fluid.registrationContainer{
+        padding-right: 45px;
+    }
+}
+
+/*iPhone 4 query for weird formats*/
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-device-pixel-ratio: 2)
+and (device-aspect-ratio: 2/3)
+and (orientation:portrait)
+{
+    .col-xs-12.countDown{
+        margin-right: 50px;
+    }
+}
+
+/*For Desktops*/
+@media (min-width: 1281px) {
+    .logoForeground {
+        height: 90vh;
+    }
+    .logoBackground {
+        height: 100vh;
+    }
+}
+
+/*iPad Media Query*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+    .registrationRow {
+        margin-right: 35px;
+    }
+
+    .col-sm-3.registrationColumn > div {
+        width: 145%;
+    }
+
+}
