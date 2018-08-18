@@ -191,6 +191,14 @@ a {
     padding-bottom: 30px;
 }
 
+#a15 a {
+    color: #FAA880;
+}
+
+#a15 a:hover {
+    color: #d94d09;
+}
+
 .col-lg-6.testimonial-text {
     padding-bottom: 20px;
     text-align: right;
