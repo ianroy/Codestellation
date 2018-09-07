@@ -255,6 +255,14 @@ and (orientation:portrait)
     }
 }
 
+/* MLH logo only visible on desktop/laptops */
+@media (max-width:1024px)  {
+    #mlh-trust-badge{
+        visibility: hidden;
+    }
+}
+
+
 /*iPad Media Query*/
 @media only screen
 and (min-device-width : 768px)
