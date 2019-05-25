@@ -21,6 +21,17 @@
 
     <meta name="theme-color" content="#ffffff">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+
+    <link rel="stylesheet"
+          href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+          integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
     <script type="application/ld+json">
         {
             "@context": "http://schema.org",
@@ -33,10 +44,35 @@
 
     <title>Codestellation 2019</title>
 
+  <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+
   <style>
   html, body { margin:0; padding:0; overflow:hidden; background-image: url(./images/space.png); background-repeat:no-repeat; background-size:cover; }
 
   svg { position:fixed; top:0; left:0; height:100%; width:100% }
+
+  @font-face {
+     font-family: SpaceGrotesk;
+     src: url(./fonts/SpaceGrotesk-Regular.woff);
+  }
+
+  @font-face {
+     font-family: SpaceGrotesk;
+     src: url(./fonts/SpaceGrotesk-SemiBold.woff);
+     font-weight: bold;
+  }
+
+  a {
+     font-family: SpaceGrotesk;
+  }
+
+  .nav-link {
+     text-transform: none; !important
+  }
+
   div {
     position: relative;
     display: inline;
@@ -72,6 +108,30 @@
 </style>
 </head>
 <body>
+  <nav class="navbar sticky-top navbar-expand-md navbar-dark" style="background-color: #c5302c">
+    <a class="navbar-brand mr-0 mr-md-2" href="#"><b>Codestellation 2019</b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarList"
+            aria-controls="navbarList" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarList">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.facebook.com/codestellation/">Facebook</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://twitter.com/Codestellation/">Twitter</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.instagram.com/brandeis_bitmap/">Instagram</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./2018/index.html">Last Year's Event</a>
+            </li>
+        </ul>
+    </div>
+</nav>
   <div>
     <?xml version="1.0" encoding="utf-8"?>
     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -364,6 +424,15 @@
 </svg>
 
 </div>
+
+<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+        integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
+        crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
+        integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
