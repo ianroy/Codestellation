@@ -66,6 +66,7 @@
 </style>
 <g id="Black_Hole_1_">
 	<rect id="Space" x="0" y="0" class="st0" width="5000" height="5000"/>
+	<circle cx="2500" cy="2500" r="1000"/>
 	<g id="Red">
 		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-2031.0477" y1="3425.9404" x2="2173.1892" y2="2566.7854">
 			<stop  offset="0" style="stop-color:#C1282D"/>
