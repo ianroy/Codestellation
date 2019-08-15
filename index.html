@@ -1,40 +1,42 @@
 <html>
 <head>
 
-  <meta charset="utf-8">
+	<meta charset="utf-8">
 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <meta name="description" content="Prime your telescopes! Codestellation 2019 news is coming soon!" />
+	<meta name="description" content="Prime your telescopes! Codestellation 2019 news is coming soon!" />
 
-  <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
 
-  <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
 
-  <link rel="manifest" href="./favicons/site.webmanifest">
+	<link rel="manifest" href="./favicons/site.webmanifest">
 
-  <meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileColor" content="#da532c">
 
-  <meta name="theme-color" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
 
-  <link rel="stylesheet"
-  href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
-  integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+	<link rel="stylesheet"
+		  href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+		  integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
-  integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+		  integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
-  <script type="application/ld+json">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<script type="application/ld+json">
   {
     "@context": "http://schema.org",
     "@type": "WebSite",
@@ -44,113 +46,107 @@
   }
   </script>
 
-  <title>Codestellation 2019</title>
+	<title>Codestellation 2019</title>
 
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+	<script
+			src="https://code.jquery.com/jquery-3.3.1.min.js"
+			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			crossorigin="anonymous"></script>
 
-  <style>
-  html, body { margin:0; padding:0; overflow:hidden; background-image: url(./images/space.png); background-repeat:no-repeat; background-size:cover; }
+	<style>
+		body { margin:0; padding:0;}
 
-  svg { position:fixed; top:0; left:0; height:100%; width:100% }
+		@font-face {
+			font-family: SpaceGrotesk;
+			src: url(./fonts/SpaceGrotesk-Regular.woff);
+		}
 
-  @font-face {
-    font-family: SpaceGrotesk;
-    src: url(./fonts/SpaceGrotesk-Regular.woff);
-  }
+		@font-face {
+			font-family: SpaceGrotesk;
+			src: url(./fonts/SpaceGrotesk-SemiBold.woff);
+			font-weight: bold;
+		}
 
-  @font-face {
-    font-family: SpaceGrotesk;
-    src: url(./fonts/SpaceGrotesk-SemiBold.woff);
-    font-weight: bold;
-  }
+		a {
+			font-family: SpaceGrotesk;
+		}
 
-  a {
-    font-family: SpaceGrotesk;
-  }
+		.nav-link {
+			text-transform: none; !important
+		}
 
-  .nav-link {
-    text-transform: none; !important
-  }
+		.rotate {
+			-webkit-animation: blackHoleRotate 8s infinite linear;
+			-moz-animation: blackHoleRotate 8s infinite linear;
+			-o-animation: blackHoleRotate 8s infinite linear;
+			-ms-animation: blackHoleRotate 8s infinite linear;
+			animation: blackHoleRotate 8s infinite linear;
+		}
 
-  div {
-    position: relative;
-    display: inline;
-  }
-  .rotate {
-    -webkit-animation: blackHoleRotate 8s infinite linear;
-    -moz-animation: blackHoleRotate 8s infinite linear;
-    -o-animation: blackHoleRotate 8s infinite linear;
-    -ms-animation: blackHoleRotate 8s infinite linear;
-    animation: blackHoleRotate 8s infinite linear;
-  }
-
-  @-webkit-keyframes blackHoleRotate {
-    0% { -webkit-transform: rotate(0deg); -webkit-transform-origin: 50% 50%;}
-    100% { -webkit-transform: rotate(360deg); -webkit-transform-origin: 50% 50%;}
-  }
-  @-moz-keyframes blackHoleRotate {
-    0% { -moz-transform: rotate(0deg); -moz-transform-origin: 50% 50%;}
-    100% { -moz-transform: rotate(360deg); -moz-transform-origin: 50% 50%;}
-  }
-  @-o-keyframes blackHoleRotate {
-    0% { -o-transform: rotate(0deg); -o-transform-origin: 50% 50%;}
-    100% { -o-transform: rotate(360deg); -o-transform-origin: 50% 50%;}
-  }
-  @-ms-keyframes blackHoleRotate {
-    0% { -ms-transform: rotate(0deg); -ms-transform-origin: 50% 50%;}
-    100% { -ms-transform: rotate(360deg); -ms-transform-origin: 50% 50%;}
-  }
-  @-keyframes blackHoleRotate {
-    0% { transform: rotate(0deg); transform-origin: 50% 50%;}
-    100% { transform: rotate(360deg); transform-origin: 50% 50%;}
-  }
-</style>
+		@-webkit-keyframes blackHoleRotate {
+			0% { -webkit-transform: rotate(0deg); -webkit-transform-origin: 50% 50%;}
+			100% { -webkit-transform: rotate(360deg); -webkit-transform-origin: 50% 50%;}
+		}
+		@-moz-keyframes blackHoleRotate {
+			0% { -moz-transform: rotate(0deg); -moz-transform-origin: 50% 50%;}
+			100% { -moz-transform: rotate(360deg); -moz-transform-origin: 50% 50%;}
+		}
+		@-o-keyframes blackHoleRotate {
+			0% { -o-transform: rotate(0deg); -o-transform-origin: 50% 50%;}
+			100% { -o-transform: rotate(360deg); -o-transform-origin: 50% 50%;}
+		}
+		@-ms-keyframes blackHoleRotate {
+			0% { -ms-transform: rotate(0deg); -ms-transform-origin: 50% 50%;}
+			100% { -ms-transform: rotate(360deg); -ms-transform-origin: 50% 50%;}
+		}
+		@-keyframes blackHoleRotate {
+		0% { transform: rotate(0deg); transform-origin: 50% 50%;}
+		100% { transform: rotate(360deg); transform-origin: 50% 50%;}
+		}
+	</style>
 </head>
 <body>
-  <nav class="navbar sticky-top navbar-expand-md navbar-dark" style="background-color: #c5302c">
-    <a class="navbar-brand mr-0 mr-md-2" href="#"><b>Codestellation 2019</b></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarList"
-    aria-controls="navbarList" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<nav class="navbar sticky-top navbar-expand-md navbar-dark" style="background-color: #c5302c">
+	<a class="navbar-brand mr-0 mr-md-2" href="#"><b>Codestellation 2019</b></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarList"
+			aria-controls="navbarList" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
 
-  <div class="collapse navbar-collapse" id="navbarList">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="https://www.facebook.com/codestellation/">Facebook</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://twitter.com/Codestellation/">Twitter</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://www.instagram.com/brandeis_bitmap/">Instagram</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="./2018/index.html">Last Year's Event</a>
-      </li>
-    </ul>
-  </div>
+	<div class="collapse navbar-collapse" id="navbarList">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="https://www.facebook.com/codestellation/">Facebook</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="https://twitter.com/Codestellation/">Twitter</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="https://www.instagram.com/brandeis_bitmap/">Instagram</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="./2018/index.html">Last Year's Event</a>
+			</li>
+		</ul>
+	</div>
 </nav>
-<div>
-  <?xml version="1.0" encoding="utf-8"?>
-  <!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<div class="sectionBackground">
+	<?xml version="1.0" encoding="utf-8"?>
+	<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+	<svg class="landingSectionBlackHole" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
   	 viewBox="0 0 5000 5000" style="enable-background:new 0 0 5000 5000;" xml:space="preserve">
   <style type="text/css">
   	.st0{fill:url(#SVGID_1_);}
-  	.st1{fill:url(#SVGID_2_);}
-  	.st2{fill:url(#SVGID_3_);}
-  	.st3{fill:url(#SVGID_4_);}
-  	.st4{fill:url(#SVGID_5_);}
-  	.st5{fill:url(#SVGID_6_);}
-  	.st6{fill:url(#SVGID_7_);}
-  	.st7{fill:url(#SVGID_8_);}
-  	.st8{fill:url(#SVGID_9_);}
-  	.st9{fill:url(#SVGID_10_);}
-  	.st10{fill:#FFFFFF;}
+	.st1{fill:url(#SVGID_2_);}
+	.st2{fill:url(#SVGID_3_);}
+	.st3{fill:url(#SVGID_4_);}
+	.st4{fill:url(#SVGID_5_);}
+	.st5{fill:url(#SVGID_6_);}
+	.st6{fill:url(#SVGID_7_);}
+	.st7{fill:url(#SVGID_8_);}
+	.st8{fill:url(#SVGID_9_);}
+	.st9{fill:url(#SVGID_10_);}
+	.st10{fill:#FFFFFF;}
   </style>
   <g id="Black_Hole_1_">
   	<g id="Red" class="rotate">
@@ -468,25 +464,500 @@
   </svg>
 
 </div>
+<!--Sign Up Section-->
+<div class="sectionBackground" >
+	<div class="sectionDivider"></div>
+	<div class="container">
+		<div class="row justify-content-center align-items-center">
+			<div class="col-sm-12 col-md-4">
+				<div class="columnWrapper">
+					<img src="./svgs/Layer1.svg" class="signUp-blackhole" />
+					<h1 class="subtitle">
+						HACKERS
+					</h1>
+					<div class="signUp-column">
+						<h3 class="yellowText signUp-text">
+							The early registration deadline is October 15th and regular registration closes November 3rd.
+							For more information check out the FAQ!
+						</h3>
+					</div>
+					<button type="button" onclick="openHackerRegistration()" class="signUp-button">
+						REGISTER NOW
+					</button>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-4">
+				<div class="columnWrapper">
+					<img src="./svgs/Layer2.svg" class="signUp-blackhole" />
+					<h1 class="subtitle">
+						MENTORS
+					</h1>
+					<div class="signUp-column">
+						<h3 class="yellowText signUp-text">
+							Interested in volunteering to help our hackers the day of the event?
+							Sign up here to be a mentor for Codestellation.
+						</h3>
+					</div>
+					<button type="button" onclick="openHackerRegistration()" class="signUp-button">
+						SIGN UP
+					</button>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-4">
+				<div class="columnWrapper">
+					<img src="./svgs/Layer3.svg" class="signUp-blackhole" />
+					<h1 class="subtitle">
+						SPONSORS
+					</h1>
+					<div class="signUp-column">
+						<h3 class="yellowText signUp-text">
+							Codestellation can’t take off without our sponsors!
+							Learn more about what perks you’ll recieve and how your partnership will contribute to the event.
+						</h3>
+					</div>
+					<button type="button" onclick="mailCodestellation()" class="signUp-button">
+						SPONSOR US
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--Video Section-->
+<div class="sectionBackground">
+	<div class="sectionDivider"></div>
+	<div class="container">
+		<h1 class="yellowText">November 9th-10th, 2019 | 24 Hours</h1>
+		<div class="embed-responsive embed-responsive-16by9 codestellationVideo">
+			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/StLbX0GWPVc"
+					allowfullscreen></iframe>
+		</div>
+		<h4 class="yellowText">
+			Codestellation is an annual hackathon held at Brandeis University and organized by BITMAP (Brandeis Initiative for Machines, Apps and Programming).
+		</h4>
+	</div>
+</div>
+<!--Stories-->
+<div class="sectionBackground">
+	<div class="sectionDivider"></div>
+	<div class="container">
+		<h1 class="subtitle">Stories</h1>
+		<div class="row">
+				<div class="col-sm-12 col-lg-4">
+					<img src="images/kevin.png" class="testimonial-images float-right img-rounded">
+					<h2 class="testimonial-name">Kevin Wang</h2>
+				</div>
+				<div class="col-sm-12 col-lg-8">
+					<h4 class="yellowText testimonial-text">
+						I am definitely a loyal devotee to Codestellation.
+						As a senior having been to every Codestellation since my freshman year, I always find it amazing to see
+						the growth in the number of participants and the quality of the overall event each year. While this year, I
+						was a mentor and not a hacker, I thrououghly enjoyed helping hackers troubleshoot their problems and see some
+						truly amazing hacks developed in 24 hours. I highly recommend Codestellation to hackers of all experience levels. It is
+						an equally great event for beginners and even for those with more experience.
+					</h4>
+				</div>
+			<div class="col-sm-12 col-lg-4">
+				<img src="images/mahimaDevanahalli.jpg" class="testimonial-images float-right img-rounded">
+				<h3 class="testimonial-name">Mahima Devanahalli</h3>
+			</div>
+			<div class="col-sm-12 col-lg-8">
+				<h4 class="yellowText testimonial-text">
+					Having only a few months of coding experience before Codestellation, I was hesitant to be a part of it at first.
+					However, even though it was my first ever hackathon, I learned a lot in just 24 hours and met many amazing people.
+					From a lock picking workshop to skyping the CEO of Dropbox, I couldn&#8217t have asked for a better first experience!
+				</h4>
+			</div>
+			<div class="col-sm-12 col-lg-4">
+			<img src="images/adamFleishaker.jpg" class="testimonial-images float-right img-rounded">
+			<h3 class="testimonial-name">Adam Fleishaker</h3>
+		</div>
+			<div class="col-sm-12 col-lg-8">
+				<h4 class="yellowText testimonial-text">
+					Codestellation was a phenomenal experience for me, as a participant and now as an organizer!
+					As a first-year I participated in Codestellation by myself, wanting to see how I've progressed since
+					high school. I found an event that was incredibly informative and friendly, with panels helping educate
+					participants on all sorts of skills, and everyone on the floor having an amazing sense of community and
+					always lending a hand to help each other. Now helping to organize it as a Junior, I hope to give attendants
+					the same joy and encouragement towards computer science that I received!
+				</h4>
+			</div>
 
-<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
-integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
-crossorigin="anonymous"></script>
+		</div>
+	</div>
+	</div>
 
-<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
-integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
-crossorigin="anonymous"></script>
+	<!--FAQ-->
+	<div class="sectionBackground">
+		<div class="sectionDivider"></div>
+		<h1 class="subtitle">FAQ</h1>
+		<div class="container">
+		<ul id="q1">
+			<h3 class="faq-text" onclick=dropdownToggle('1')><span id="b1" class="fas fa-chevron-circle-right dropDownIcon dropDownIcon"></span>
+				A Hacka-What?
+			</h3>
+			<h4 style="display: none; line-height: 1.5; color: white; font-weight: lighter" id="a1" >
+				A hackathon is an opportunity to get together with others who share your passion for building and creating technology for
+				a weekend and create something great. That app you&#8217ve been talking about making forever?  That software that would really
+				make school that much easier? This is the perfect opportunity to sit down and make it a reality.
+				At Codestellation, you&#8217ll join a small launch team to create something awesome over the course of 24 hours.
+				Along the way, we&#8217ve also got a bunch of fun activities planned just in case you need a break from all the coding you&#8217ll be doing.
+				If a weekend of making new friends, coding, and partaking in all sorts of fun activities sounds like a blast to you, join us for
+				Codestellation Fall 2018!
+			</h4>
+		</ul>
+		<ul id="q2">
+			<h3 class="faq-text" onclick=dropdownToggle('2')><span id="b2" class="fas fa-chevron-circle-right dropDownIcon" ></span>
+				I heard that applying to be an astronaut was super difficult. Who can attend?
+			</h3>
+			<h4 style="display: none; line-height: 1.5; color: white; font-weight: lighter" id="a2" >
+				Any student older than 18 is invited to attend this event. If you are a high school student under 18, you can still
+				come, but please contact us for forms. We want to fill the halls with a diverse group of interesting hackers with a
+				variety of different skills, attributes, strengths, and perspectives. If you don&#8217t have a team, we can help you find
+				one - all you have to do is indicate on the registration form that you would like to be placed with a team, and we will
+				put you in contact with other hackers both prior to and at the start of the event. New hackers are absolutely encouraged
+				to attend; if you&#8217ve been waiting for a sign to tell you that you&#8217re good enough to go to a hackathon, this is it!
+			</h4>
+		</ul>
+		<ul id="q3">
+			<h3 class="faq-text" onclick=dropdownToggle('3')><span id="b3" class="fas fa-chevron-circle-right dropDownIcon" ></span>
+				I&#8217ve never been to outer space, and have no idea how to program. Will that be a problem?
+			</h3>
+			<h4 style="display: none; line-height: 1.5; color: white; font-weight: lighter" id="a3" >
+				Have no worries cadet! Codestellation is a beginner-friendly hackathon, meaning anyone can come!
+			</h4>
+		</ul>
+
+		<ul id="q4">
+			<h3 class="faq-text" onclick=dropdownToggle('4')><span id="b4" class="fas fa-chevron-circle-right dropDownIcon" ></span>
+				When do I need to apply by? Is there a deadline?
+			</h3>
+			<h4 style="display: none; line-height: 1.5; color: white; font-weight: lighter" id="a4" >
+				Early registration closes on October 15th, 2018. If you register before then, you will be guaranteed a t-shirt and a
+				swag bag! Regular registration closes one week before the event on November 3rd, 2018.
+			</h4>
+		</ul>
+
+		<ul id="q5">
+			<h3 class="faq-text" onclick=dropdownToggle('5')><span id="b5" class="fas fa-chevron-circle-right dropDownIcon" ></span>
+				T-minus how many hours until blast off? When is this happening?
+			</h3>
+			<h4 style="display: none; line-height: 1.5; color: white; font-weight: lighter" id="a5" >
+				Codestellation will take place November 9th to 10th, see above for the countdown until takeoff!
+			</h4>
+		</ul>
+
+		<ul id="q6">
+			<h3 class="faq-text" onclick=dropdownToggle('6')><span id="b6" class="fas fa-chevron-circle-right dropDownIcon" ></span>
+				Space travel can take a long time. How long is Codestellation?
+			</h3>
+			<h4 style="display: none; line-height: 1.5; color: white; font-weight: lighter" id="a6" >
+				Codestellation is a 24 hour hackathon starting Saturday morning and ending Sunday morning!
+			</h4>
+		</ul>
+
+		<ul id="q7">
+			<h3 class="faq-text" onclick=dropdownToggle('7')><span id="b7" class="fas fa-chevron-circle-right dropDownIcon" ></span>
+				Space is such a huge place. Where is this happening?
+			</h3>
+			<h4 style="display: none; line-height: 1.5; color: white; font-weight: lighter" id="a7" >
+				Codestellation will take place at Brandeis University (in Waltham, MA) in the Shapiro Science Center. We will be
+				sending out detailed directions as well as a map in an email to participants closer to the event date. Brandeis is
+				conveniently located right on the Fitchburg-South Acton Line of the MBTA, making transportation from other Boston
+				schools extremely easy.
+			</h4>
+		</ul>
+
+		<ul id="q8">
+			<h3 class="faq-text" onclick=dropdownToggle('8')><span id="b8" class="fas fa-chevron-circle-right dropDownIcon" ></span>
+				I thought only Elon Musk could afford to travel to space! Will travel costs be covered?
+			</h3>
+			<h4 style="display: none; line-height: 1.5; color: white; font-weight: lighter" id="a8" >
+				Unfortunately we do not provide travel grants, but the event itself is free!
+			</h4>
+		</ul>
+
+		<ul id="q9">
+			<h3 class="faq-text" onclick=dropdownToggle('9')><span id="b9" class="fas fa-chevron-circle-right dropDownIcon" ></span>
+				I have never traveled to space before. What should I bring?
+			</h3>
+			<h4 style="display: none; line-height: 1.5; color: white; font-weight: lighter" id="a9" >
+				You will definitely need to bring a laptop or some other device to code on. As this is an overnight hackathon, you
+				might thank yourself in the morning if you bring a toothbrush and a towel to wash your face. If this is your first
+				time hacking, consider bringing a pillow and a sleeping bag &#8212 it makes a world of difference to be coding when you&#8217re
+				well-rested and energized. Other than basic necessities like that, we&#8217ve got you covered: we will be providing all the
+				snacks and food you could eat, a Codestellation t-shirt, lots of hardware, 3D printers, and monitors for all your coding
+				needs.
+			</h4>
+		</ul>
+		<ul id="q10">
+			<h3 class="faq-text" onclick=dropdownToggle('10')><span id="b10" class="fas fa-chevron-circle-right dropDownIcon" ></span>
+				Sleeping in a rocket can be hard. Where will I sleep?
+			</h3>
+			<h4 style="display: none; line-height: 1.5; color: white; font-weight: lighter" id="a10" >
+				We will have designated sleeping rooms where the lights will be off and you can sleep on a carpeted floor. Feel free
+				to bring your own sleeping bags, pillows, blankets if you would like to sleep elsewhere.
+			</h4>
+		</ul>
+
+		<ul id="q11">
+			<h3 class="faq-text" onclick=dropdownToggle('11')><span id="b11" class="fas fa-chevron-circle-right dropDownIcon" ></span>
+				Are there showers on the rocket? Where will I shower?
+			</h3>
+			<h4 style="display: none; line-height: 1.5; color: white; font-weight: lighter" id="a11" >
+				Unfortunately, there will not be any showers available to you during the event. However, feel free to leave to shower
+				and then come back, or just bring some dry shampoo and deodorant (it&#8217s okay we won&#8217t judge you!)
+			</h4>
+		</ul>
+		<ul id="q12">
+			<h3 class="faq-text" onclick=dropdownToggle('12')><span id="b12" class="fas fa-chevron-circle-right dropDownIcon" ></span>
+				There is probably a lot of cool stuff in space. Will there be swag?
+			</h3>
+			<h4 style="display: none; line-height: 1.5; color: white; font-weight: lighter" id="a12" >
+				Of course! Last year&#8217s haul included t-shirts and stickers! You will also be able to get swag from some of the other
+				sponsors attending Codestellation!
+			</h4>
+		</ul>
+		<ul id="q13">
+			<h3 class="faq-text" onclick=dropdownToggle('13')><span id="b13" class="fas fa-chevron-circle-right dropDownIcon" ></span>
+				I heard astronaut food is pretty gross. What will I eat?
+			</h3>
+			<h4 style="display: none; line-height: 1.5; color: white; font-weight: lighter" id="a13" >
+				We will be providing all the meals during Codestellation along with a constant stream of snacks and energy drinks so you
+				will never go hungry. Some examples of our meals from previous years includes: PF Chang&#39;s, Domenics, and Dunkin Donuts. And don&#8217t worry if you have any dietary
+				restrictions, we will have vegetarian, vegan, and gluten free options for all!
+			</h4>
+		</ul>
+		<ul id="q14">
+			<h3 class="faq-text" onclick=dropdownToggle('14')><span id="b14" class="fas fa-chevron-circle-right dropDownIcon" ></span>
+				What if I can only come for part of the weekend? Can I still participate in this space adventure?
+			</h3>
+			<h4 style="display: none; line-height: 1.5; color: white; font-weight: lighter" id="a14" >
+				Of course! We always recommend that hackers come for the whole event in order to get the most out of their experience,
+				but you can come late or leave early. Due to our school&#8217s policies, we do have one rule that you may not come to Codestellation
+				between midnight on Saturday and 5 AM on Sunday. However, you can come and go any other time.
+			</h4>
+		</ul>
+		<ul id="q15">
+			<h3 class="faq-text" onclick=dropdownToggle('15')><span id="b15" class="fas fa-chevron-circle-right dropDownIcon" ></span>
+				Who do I contact with other questions? Is there anyone at mission control I can talk to?
+			</h3>
+			<h4 style="display: none; line-height: 1.5; color: white; font-weight: lighter" id="a15" >
+				Feel free to reach out to mission control at <a href="mailto: codestellation@gmail.com">codestellation@gmail.com</a>
+				and <a href="https://www.youtube.com/watch?v=lTSVOnhLtCs&feature=youtu.be&t=8s" target="_blank">tell Houston if you have
+				any problems or questions</a>.
+			</h4>
+		</ul>
+
+		<ul id="q16">
+			<h3 class="faq-text" onclick=dropdownToggle('16')><span id="b16" class="fas fa-chevron-circle-right dropDownIcon" ></span>
+				Is there some space conduct that we need to abide by?
+			</h3>
+			<h4 style="display: none; line-height: 1.5; color: white; font-weight: lighter" id="a16" style="display: none; line-height: 1.5;">
+				Make sure to follow smart decisions during your interstellar travels. As a Major League Hacking event, we follow and enforce
+				the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">MLH Code of Conduct</a> at Codestelltaion.
+			</h4>
+		</ul>
+		</div>
+	</div>
+
+	<!--Meet the Team-->
+	<div class="sectionBackground">
+		<div class="sectionDivider"></div>
+		<div class="container-fluid">
+			<h1 class="subtitle">Meet the Team</h1>
+			<div class="row justify-content-around">
+				<div class="col-md-3">
+					<div class="team-container">
+						<img src="./images/AdamFly.jpg" class="team-image"/>
+						<h3 class="yellowText team-name">Adam Fleishaker</h3>
+						<h4 class="yellowText team-position">Lead Organizer & Social Media Coordinator</h4>
+						<h5 class="team-subtitle"><b>Majors: </b>Computer Science and Business</h5>
+						<h5 class="team-subtitle"><b>Hometown: </b>Rye Brook, New York</h5>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="team-container">
+						<img src="./images/MitchellDodell.jpg" class="team-image"/>
+						<h3 class="yellowText team-name">Mitchell Dodell</h3>
+						<h4 class="yellowText team-position">Lead Organizer & Web Developer</h4>
+						<h5 class="team-subtitle"><b>Majors: </b>Computer Science and Business</h5>
+						<h5 class="team-subtitle"><b>Hometown: </b>Scottsdale, Arizona</h5>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="team-container">
+						<img src="./images/cindyHou.jpg" class="team-image"/>
+						<h3 class="yellowText team-name">Cindy Hou</h3>
+						<h4 class="yellowText team-position">Social Media Coordinator and Graphic Designer</h4>
+						<h5 class="team-subtitle"><b>Major: </b>Computer Science</h5>
+						<h5 class="team-subtitle"><b>Minor: </b>Business</h5>
+						<h5 class="team-subtitle"><b>Hometown: </b> Saarburg, Germany</h5>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-around">
+				<div class="col-md-3">
+					<div class="team-container">
+						<img src="./images/jonahSanders.png" class="team-image"/>
+						<h3 class="yellowText team-name">Jonah Sanders</h3>
+						<h4 class="yellowText team-position">Treasurer</h4>
+						<h5 class="team-subtitle"><b>Majors: </b>Computer Science and Business</h5>
+						<h5 class="team-subtitle"><b>Hometown: </b> Los Angeles, California</h5>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="team-container">
+						<img src="./images/oliverDanielsKoch.JPG" class="team-image"/>
+						<h3 class="yellowText team-name">Oliver Daniels-Koch</h3>
+						<h4 class="yellowText team-position">Events Coordinator & Sponsorship Coordinator</h4>
+						<h5 class="team-subtitle"><b>Majors: </b>Computer Science and Economics</h5>
+						<h5 class="team-subtitle"><b>Hometown: </b> Palo Alto, California</h5>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="team-container">
+						<img src="./images/prabuGugagantha.jpg" class="team-image"/>
+						<h3 class="yellowText team-name">Prabu Gugagantha</h3>
+						<h4 class="yellowText team-position">Secretary & School Outreach Coordinator</h4>
+						<h5 class="team-subtitle"><b>Majors: </b>Physics and Computer Science</h5>
+						<h5 class="team-subtitle"><b>Minor: </b>Mathematics</h5>
+						<h5 class="team-subtitle"><b>Hometown: </b> Staten Island, New York</h5>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-around">
+				<div class="col-md-3">
+					<div class="team-container">
+						<img src="./images/AdamPann.png" class="team-image"/>
+						<h3 class="yellowText team-name">Adam Pann</h3>
+						<h4 class="yellowText team-position">Senior Advisor</h4>
+						<h5 class="team-subtitle"><b>Majors: </b>Computer Science and Business</h5>
+						<h5 class="team-subtitle"><b>Hometown: </b> Los Altos, California</h5>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="team-container">
+						<img src="./images/Ritika.png" class="team-image"/>
+						<h3 class="yellowText team-name">Ritika Saxena</h3>
+						<h4 class="yellowText team-position">Senior Advisor</h4>
+						<h5 class="team-subtitle"><b>Majors: </b>Computer Science and Economics</h5>
+						<h5 class="team-subtitle"><b>Hometown: </b> Belmont, Massachussets</h5>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="team-container">
+						<img src="./images/Jordan.jpg" class="team-image"/>
+						<h3 class="yellowText team-name">Jordan Prudhomme</h3>
+						<h4 class="yellowText team-position">Senior Advisor</h4>
+						<h5 class="team-subtitle"><b>Majors: </b>Computer Science and Mathematics</h5>
+						<h5 class="team-subtitle"><b>Hometown: </b> Menlo Park, California</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Schedule-->
+	<div class="sectionBackground">
+		<div class="sectionDivider"></div>
+		<h1 class="subtitle">Schedule</h1>
+		<h3 class="yellowText" style="margin-top: 1em">To be announced soon!</h3>
+	</div>
+
+	<!--Sponsors-->
+	<div class="sectionBackground">
+		<div class="sectionDivider"></div>
+		<div class="container">
+			<h1 class="subtitle">Sponsors</h1>
+			<div class="sponsor-container">
+				<div class="row align-items-center">
+					<div class="col-sm-6 col-md-4">
+						<a href="https://www.wolfram.com/"><img class="img-thumbnail" src="./images/wolfram.png" alt="Wolfram"></a>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<a href="https://en.wikipedia.org/wiki/Monster_Energy"><img class="img-thumbnail" src="./images/monster.png" alt="Monster"></a>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<a href="http://brandeismakerlab.com/"><img class="img-thumbnail" src="./images/makerlab.jpg" alt="Brandeis MakerLab"></a>
+					</div>
+				</div>
+				<div class="row align-items-center">
+					<div class="col-sm-6 col-md-4">
+						<a href="https://www.codingitforward.com/"><img class="img-thumbnail" src="./images/codingItForward.png" alt="Coding it Forward"></a>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<a href="https://indico.io/"><img class="img-thumbnail" src="./images/indico.png" alt="Indico"></a>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<a href="https://www.constantcontact.com/index.jsp"><img class="img-thumbnail" src="./images/constantContact.png" alt="Constant Contact"></a>
+					</div>
+				</div>
+				<div class="row align-items-center">
+					<div class="col-sm-6 col-md-4">
+						<a href="https://www.brandeis.edu/computer-science/"><img class="img-thumbnail" src="./images/michtom.png" alt="Brandeis Michtom School"></a>
+					</div>
+				</div>
+			</div>
+			<h3 class="yellowText" style="margin-top: 1em">Want to sponsor our events? We would love to have you on board!
+				<br />
+				Email us at <a href="mailto: codestellation@gmail.com" style="overflow-wrap: break-word">codestellation@gmail.com</a>!
+			</h3>
+		</div>
+	</div>
+</div>
+
+
 
 <script>
-document.getElementById('Black_Hole_1_').addEventListener('click', function (event) {
-  window.location.href="https://codestellation2019.typeform.com/to/zJ97On";
-}, false);
-document.getElementById('Black_Hole_1_').addEventListener('mouseenter', function (event) {
-  document.body.style.cursor = "pointer";
-}, false);
-document.getElementById('Black_Hole_1_').addEventListener('mouseleave', function (event) {
-  document.body.style.cursor = "default";
-}, false);
+    function dropdownToggle(number) {
+        $(document).ready(function () {
+            button = document.getElementById("b" + number);
+            ul = document.getElementById("q" + number);
+            if (button.classList.contains('fa-chevron-circle-right')) {
+                button.classList.replace("fa-chevron-circle-right", "fa-chevron-circle-down");
+                $("#a" + number).slideToggle("slow");
+            }
+            else if (button.classList.contains('fa-chevron-circle-down')) {
+                button.classList.replace("fa-chevron-circle-down", "fa-chevron-circle-right");
+                $("#a" + number).slideToggle("slow");
+            }
+        });
+    }
+</script>
+
+
+
+<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+		integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
+		crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
+		integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
+		crossorigin="anonymous"></script>
+
+<script>
+    function mailCodestellation(){
+        window.location = "mailto:codestellation@gmail.com?subject=Codestellation Fall 2019 Sponsorship Inquiry";
+    }
+    function openHackerRegistration(){
+        window.open("https://codestellation2019.typeform.com/to/zJ97On");
+    }
+    function openMentorshipRegistration(){
+        window.open("https://goo.gl/forms/s7PuSggOEGpxgXZZ2");
+    }
+</script>
+
+<script>
+    document.getElementById('Black_Hole_1_').addEventListener('click', function (event) {
+        window.location.href="https://codestellation2019.typeform.com/to/zJ97On";
+    }, false);
+    document.getElementById('Black_Hole_1_').addEventListener('mouseenter', function (event) {
+        document.body.style.cursor = "pointer";
+    }, false);
+    document.getElementById('Black_Hole_1_').addEventListener('mouseleave', function (event) {
+        document.body.style.cursor = "default";
+    }, false);
 </script>
 
 </body>

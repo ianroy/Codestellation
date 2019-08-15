@@ -1,0 +1,198 @@
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+.sectionDivider {
+    padding: 1em 0;
+    border-top: 2px solid gray;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.signUp-blackhole {
+    margin-bottom: 1em;
+}
+
+
+.sectionBackground {
+    background: url(./images/space.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100vw;
+    padding-top: 5vh;
+}
+.landingSectionBlackHole { top:0; left:0; height:100vh; width: 100vw }
+
+.subtitle {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.dropDownIcon {
+    color: #c5302c;
+}
+
+.faq-text {
+    color: #E3E5B3;
+    font-weight: lighter;
+}
+
+.dropDrop-text {
+    line-height: 1.5;
+    display: none;
+}
+
+.yellowText {
+    color: #E3E5B3;
+    font-weight: lighter;
+    text-align: center;
+    margin: 0;
+}
+
+.signUp-button {
+    border-radius: 20px;
+    margin-top: 1em;
+    cursor: pointer;
+    padding: 10px;
+    opacity: 0.8;
+    color: grey;
+    font-weight: bold;
+    background-color: white;
+    transition: 1s;
+    width: 80%;
+}
+
+.codestellationVideo {
+    margin: 1em 0;
+}
+
+.signUp-button:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.columnWrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.signUp-text {
+    flex-grow: 0;
+}
+
+.testimonial-images{
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+}
+
+.testimonial-name {
+    padding-top: 10px;
+    clear: both;
+    float: right;
+    display: block;
+    font-weight: bolder;
+    color: #E3E5B3;
+    margin-bottom: 1em;
+}
+
+.testimonial-text {
+    text-align: right;
+    margin-bottom: 1em;
+}
+
+div > ul:last-child {
+    margin-bottom: 0em;
+}
+
+.team-image {
+    height: 350px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.img-thumbnail {
+    vertical-align: middle;
+    background-color: white;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    margin-bottom: 1em;
+}
+
+.sponsor-container {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.team-name {
+    align-self: flex-start;
+    font-weight: bold;
+}
+
+.team-position {
+    align-self: flex-start;
+    text-align: left;
+}
+
+.team-subtitle {
+    color: white;
+    font-weight: lighter;
+}
+
+/*Media Queries*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+    /*For Ipad*/
+    .signUp-text {
+        flex-grow: 1;
+    }
+
+    .signUp-button {
+        width: 100%;
+    }
+    .signUp-column {
+        height: 400px;
+        flex-grow: 1;
+        margin: 0!important;
+    }
+
+}
+
+
+@media only screen and (min-width: 1024px) {
+    /* For Desktops */
+    .signUp-button {
+        width: 75%;
+    }
+
+    .signUp-column {
+        height: 300px;
+    }
+}
+
+
+@media only screen and (min-width: 1220px) {
+    /* For Desktops */
+    .signUp-column {
+        height: 200px;
+    }
+}
