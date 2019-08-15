@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 .sectionBackground {
-    background: url(./images/space.png) no-repeat center center fixed;
+    background: url(./images/space.png) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
