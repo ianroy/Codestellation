@@ -147,6 +147,8 @@ div > ul:last-child {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
     margin-bottom: 1em;
 }
 
