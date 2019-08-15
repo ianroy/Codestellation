@@ -23,6 +23,7 @@ h1, h2, h3, h4, h5, h6, p {
     width: 100vw;
     padding-top: 5vh;
 }
+
 .landingSectionBlackHole { top:0; left:0; height:100vh; width: 100vw }
 
 .subtitle {
@@ -113,8 +114,12 @@ div > ul:last-child {
     margin-bottom: 0em;
 }
 
+.signUp-blackhole {
+
+}
+
 .team-image {
-    height: 350px;
+    height: 100%;
     width: 100%;
     border-radius: 20px;
 }
