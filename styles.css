@@ -167,6 +167,44 @@ div > ul:last-child {
     font-weight: lighter;
 }
 
+.table-element {
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.schedule-day-headers{
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.table-cell {
+    padding-bottom: 10px;
+    text-wrap: normal;
+}
+
+.table-times {
+    font-weight: bolder;
+    color: #3A318C;
+}
+
+.table-cell-fluid-left{
+    width: 25%;
+    padding-right: 15px;
+}
+
+.table-cell-fluid-right{
+    width: 25%;
+    padding-left: 15px;
+}
+
+.table-cell-fixed{
+    padding-left: 15px;
+    padding-right: 15px;
+    text-wrap: normal;
+}
+
 /*Media Queries*/
 @media only screen
 and (min-device-width : 768px)
